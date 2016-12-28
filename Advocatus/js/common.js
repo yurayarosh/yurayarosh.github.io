@@ -13,6 +13,10 @@ $(document).ready(function() {
 	$(".toggle-mnu").click(function() {
 		$(this).toggleClass("on");
 		$(".hidden_menu").slideToggle();
+		$(".hidden_menu").find("a").click(function(){
+			$(".hidden_menu").slideUp();
+			$(".toggle-mnu").removeClass("on");
+		});
 		return false;
 	});
 

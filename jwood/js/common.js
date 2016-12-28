@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 	//Toogle menu
 	$(".nav_button").click(function() {
-		$(this).next("nav").slideToggle(800);
+		$(this).next(".hidden_nav").slideToggle();
 		return false;
 	});
 
@@ -59,27 +59,23 @@ $(document).ready(function() {
 
 	//Scroll to section
 	//Documentation https://github.com/flesler/jquery.scrollTo
-	$("nav .a_home").click(function() {
+	$(".a_home").click(function() {
 		$.scrollTo($("#home"), 800, {
-			offset: $(this).top
 		});
 		return false;
 	});
-	$("nav .a_about_me").click(function() {
+	$(".a_about_me").click(function() {
 		$.scrollTo($("#about_me"), 800, {
-			offset: $(this).top
 		});
 		return false;
 	});
-	$("nav .a_portfolio").click(function() {
+	$(".a_portfolio").click(function() {
 		$.scrollTo($("#portfolio"), 800, {
-			offset: $(this).top
 		});
 		return false;
 	});
-	$("nav .a_contact").click(function() {
+	$(".a_contact").click(function() {
 		$.scrollTo($("#contact"), 800, {
-			offset: $(this).top
 		});
 		return false;
 	});
