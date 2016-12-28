@@ -1,0 +1,233 @@
+@import "bourbon"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: $c_placeholder
+	opacity: 1
+	text-transform: uppercase
+	font: 13px $f_mon
+
+*:-moz-placeholder
+	color: $c_placeholder
+	opacity: 1
+	text-transform: uppercase
+	font: 13px $f_mon
+
+
+*::-moz-placeholder
+	color: $c_placeholder
+	opacity: 1
+	text-transform: uppercase
+	font: 13px $f_mon
+
+*:-ms-input-placeholder
+	color: $c_placeholder
+	opacity: 1
+	text-transform: uppercase
+	font: 13px $f_mon
+
+input::-webkit-input-placeholder
+	line-height: 2
+
+input:-moz-placeholder
+	line-height: 2
+
+
+input::-moz-placeholder
+	line-height: 2
+
+input:-ms-input-placeholder
+	line-height: 2
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+	box-shadow: none
+	outline: none
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+	box-shadow: none
+	outline: none
+body input:required:invalid,
+body textarea:required:invalid
+	color: #666
+	box-shadow: none
+	outline: none
+body input:focus,
+body textarea:focus,
+body select:focus
+	color: #666
+	box-shadow: none
+	outline: none
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $f_domine
+	overflow-x: hidden
+
+.section
+	padding: 8% 0
+
+.s_bluelight
+	background: $c_bluelight
+
+h1,h2,h3,h4,h5,h6
+	margin: 0
+	font-weight: normal
+
+ul
+	margin: 0
+	padding: 0	
+
+h1
+	font: bold em(48) $f_mon
+	text-transform: uppercase
+	color: #fff
+	margin: 10px 0 0
+
+.head_h
+		margin: 15% 0 12%
+		text-align: center
+
+.home
+	.head_h
+		margin-bottom: 0
+
+
+h2
+	text-align: center
+	font: bold em(32) $f_mon
+	color: $c_head
+	text-transform: uppercase
+
+.about_us_info,
+.choose_industry,
+.our_services,
+.s_our_team,
+.new_jobs,
+.happy_clients,
+.our_projects,
+.pricing_plans,
+.faq,
+.s_blog,
+.s_blog_post,
+.comments,
+.leave_message
+	h2
+		text-align: left
+		margin-bottom: 30px
+
+p
+	font: em(15) $f_domine
+	color: $c_text
+	line-height: 1.8
+	margin: 0
+
+.button_wrap
+	text-align: center
+
+.button
+	display: inline-block
+	background: $c_green
+	color: #fff
+	text-transform: uppercase
+	font: em(13) $f_mon
+	padding: 12px 25px
+	border-radius: 25px
+	border: 2px solid transparent
+	text-align: center
+	+tr(.5s)
+	&:hover,
+	&:focus,
+	&:active
+		background: transparent
+		border: 2px solid $c_green
+		text-decoration: none
+		color: $c_head
+
+.button_accent
+	background: $accent
+	border: 2px solid transparent
+	&:hover,
+	&:focus,
+	&:active
+		background: transparent
+		border: 2px solid $accent
+
+.button_color
+	&:hover,
+	&:focus,
+	&:active
+		color: #fff
+
+.owl-dots
+	text-align: center
+	margin: 10% 0 0
+	.owl-dot
+		position: relative
+		display: inline-block
+		width: 20px
+		height: 20px
+		margin: 0 5px
+		border-radius: 50%
+		border: 2px solid #fff
+		+tr(.5s)
+	.active
+		border: 2px solid $c_green
+		&:before
+			content: ''
+			position: absolute
+			top: 6px
+			right: 6px
+			width: 4px
+			height: 4px
+			background: $c_green
+			border-radius: 50%
+
+h3
+	text-transform: uppercase
+	color: $c_head
+	font: bold em(18) $f_mon
+
+
+input,
+textarea
+	background: transparent
+	border: none
+	border-bottom: 1px solid $c_inp_bd
+	color: $c_text
+	font: em(13) $f_mon
+input,
+select
+	height: 30px
+	display: inline-block
+textarea
+	width: 100%
+	resize: none
+
+h4
+	text-transform: uppercase
+	font: em(14) $f_mon
+	color: $c_head
+
+.table
+	display: table
+
+.td
+	display: table-row
+
+.tr
+	display: table-cell
+
+.simple_icon
+	display: inline-block
+		
+
+
+
+
+

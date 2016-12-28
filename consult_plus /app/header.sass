@@ -1,0 +1,185 @@
+@import "bourbon"
+@import "sass/vars"
+@import "sass/base"
+
+//First screen styles
+
+//-------------------- home page styles ------------
+
+//------------------------Header---------------------
+.main_head
+	background: url("img/bg_header.jpg") top center/cover no-repeat
+	padding: 35px 0 0 
+
+.logo
+	display: block
+	background: url("img/logo.svg") no-repeat
+	padding: 0 0 0 15px
+	margin: 0 0 10px
+	&:hover,
+	&:active,
+	&:focus
+		text-decoration: none
+	span
+		font: bold em(20) $f_mon
+		line-height: 2
+		text-transform: uppercase
+		color: #fff
+
+
+.main_menu
+	ul
+		padding: 7px 0 0
+		margin: 0
+		li
+			display: inline-block
+			padding: 0 15px
+			a
+				text-transform: uppercase
+				font: normal em(14) $f_mon
+				color: #e2e2e2
+				+tr(.25s)
+				&:hover,
+				&:active,
+				&:focus
+					color: $accent
+					text-decoration: none
+
+.dropdown
+	position: relative
+	ul
+		position: absolute
+		z-index: 1
+		top: 20px
+		left: 0
+		li
+			display: block
+
+.hidden_menu
+	display: none
+	position: absolute
+	background: $c_blue
+	left: 0
+	width: 100%
+	z-index: 2
+	ul
+		list-style: none
+		padding: 0
+		li
+			display: block
+			text-align: center
+			a
+				text-transform: uppercase
+				font: normal em(14) $f_mon
+				color: #e2e2e2
+				display: block
+				padding: 10px 0
+				+tr(.25s)
+				&:hover,
+				&:focus,
+				&:active
+					background: $accent
+					text-decoration: none
+
+
+
+//-----------------toogle button start---------------------------
+.toggle-mnu 
+	display: block
+	width: 28px
+	height: 28px
+	margin-top: 7px
+	span:after, span:before 
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+	span:after
+		top: 18px
+	span 
+		position: relative
+		display: block
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: #fff
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+	&.on span 
+		background-color: transparent
+	&.on span:before 
+		transform: rotate(45deg) translate(-1px, 0px)
+	&.on span:after 
+		transform: rotate(-45deg) translate(6px, -7px)
+
+//-----------------toogle button end---------------------------
+
+.top_contacts
+	padding: 7px 0 0
+	text-align: right
+	.icon-call-out
+		font-size: em(18)
+		color: $c_blue
+		vertical-align: text-bottom
+	span
+		font: em(15) $f_mon
+		color: #fff
+		margin: 0 12px
+	a
+		font-size: em(18)
+		color: #fff
+		background: $c_blue
+		padding: 6px 8px
+		border-radius: 50%
+		+tr(.25s)
+		&:hover,
+		&:active,
+		&:focus
+			text-decoration: none
+			background: $accent
+
+.head_h
+	span
+		font: em(16) $f_mon
+		color: #fff
+		text-transform: uppercase
+
+.header_carousel
+	margin-bottom: 5%
+	
+
+.header_carousel_item
+	display: block
+	background: $c_blue
+	text-align: center
+	padding: 80px 0 100px
+	margin-top: 50px
+	+tr(.5s)
+	&:hover,
+	&:active,
+	&:focus
+		background: $c_orange
+		text-decoration: none
+	.my,
+	span
+		color: #fff
+	.my
+		font-size: em(70)
+		line-height: 1.1
+		margin: 0 0 10px
+	span
+		display: block
+		text-transform: uppercase
+		font: bold em(20) $f_mon
+
+
+
+
+
+
+
+
+
+
+

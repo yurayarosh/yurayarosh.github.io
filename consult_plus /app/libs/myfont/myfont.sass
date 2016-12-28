@@ -1,0 +1,29 @@
+@import "bourbon"
+
++font-face("myfont", "../fonts/myfont/myfont-webfont", $file-formats: eot woff ttf)
+
+.my
+	font-family: 'myfont'
+	font-size: 26px
+	display: inline-block
+	font-style: normal
+	text-rendering: auto
+	text-transform: none
+	&.my_a::before
+		content: 'a'
+	&.my_b::before
+		content: 'b'
+	&.my_c::before
+		content: 'c'
+	&.my_d::before
+		content: 'd'
+	&.my_e::before
+		content: 'e'
+	&.my_f::before
+		content: 'f'
+	&.my_g::before
+		content: 'g'
+	&.my_h::before
+		content: 'h'
+
+
