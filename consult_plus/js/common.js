@@ -66,6 +66,7 @@ $(document).ready(function() {
 		$(".our_team_item_social").height("auto").equalHeights();
 		$(".happy_clients_item").height("auto").equalHeights();
 		$(".pricing_plans_item_content").height("auto").equalHeights();
+		$(".choose_industry_item").height("auto").equalHeights();
 	}heightses();
 
 	$(window).resize(function() {
