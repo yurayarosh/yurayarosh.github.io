@@ -24,11 +24,14 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	<style>body{overflow-x:hidden}html{background-color:#fff}.preloader{position:fixed;top:0;left:0;z-index:10000;width:100%;height:100%;background:#ccc;text-align:center}.preloader_img{display:inline-block;position:relative;top:45%;width:120px;height:120px;background:url(img/gears.gif) 50% 50% no-repeat}</style>
 
 </head>
 
 <body>
+	<!-- Preloader -->
+
+	<div class="preloader"><span class="preloader_img"></span></div>
 
 	<!-- Header -->
 
@@ -363,6 +366,7 @@
 	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
+	<style>.preloader{display: none;}</style>
 
 </body>
 </html>
