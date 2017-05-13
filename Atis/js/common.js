@@ -7,26 +7,6 @@ $(document).ready(function() {
 		return false;
 	});
 
-	//Hidden calendar carousel
-	//Documentation http://www.owlcarousel.owlgraphic.com
-
-	$(".hidden_calendar").owlCarousel({
-		items: 1,
-		loop: true,
-		dots: false,
-		nav: true,
-		navText: ['<i class="icon-arrow-left"></i>','<i class="icon-arrow-right"></i>']
-	});
-
-	$(".check_in_date_input").find("input").click(function(){
-		$(".hidden_calendar_wrap").css("display", "block");
-	});
-	$(".check_out_date_input").find("input").click(function(){
-		$(".hidden_calendar_wrap").addClass("check_out_calendar").css("display", "block");
-	});
-	$(".close_calendar").click(function(){
-		$(".hidden_calendar_wrap").removeClass("check_out_calendar").css("display", "none");
-	});
 	
 	//Set equal heights for items
 	//Documentation https://github.com/mattbanks/jQuery.equalHeights
@@ -55,4 +35,64 @@ $(document).ready(function() {
 		}
 	});
 
+	//City autocomplite
+	//Documentation https://ubilabs.github.io/geocomplete/
+	jQuery.curCSS = function(element, prop, val) {
+		return jQuery(element).css(prop, val);
+	};
+	$("input[name=check_city_input]").geocomplete();
+
+	//Datepiecker
+	//Documentation http://www.eyecon.ro/datepicker/#download
+	function nowDate () {
+		var d = new Date ();
+		var year = d.getFullYear ();
+		var month = d.getMonth () +1;
+		var day = d.getDate ();
+		return day + "/" + month + "/" + year;
+	};	
+
+	var checkInInp = $("input[name=check_in_date_input]");
+	var checkOutInp = $("input[name=check_out_date_input]");
+
+	checkInInp.DatePicker({
+		format:"d/m/Y",
+		date: nowDate (),		
+		onChange: function(formated, dates){
+			checkInInp.val(formated);
+			checkInInp.DatePickerHide ();			
+		}
+	});
+
+	checkOutInp.DatePicker({
+		format:"d/m/Y",
+		date: nowDate (),		
+		onChange: function(formated, dates){
+			checkOutInp.val(formated);
+			checkOutInp.DatePickerHide ();		
+		}
+	});
+
+	//input numbers only
+	$(".nmb_inp").keydown(function (e) {
+			// Allow: backspace, delete, tab, escape, enter and .
+			if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+				 // Allow: Ctrl/cmd+A
+				(e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+				 // Allow: Ctrl/cmd+C
+				(e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) ||
+				 // Allow: Ctrl/cmd+X
+				(e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) ||
+				 // Allow: home, end, left, right
+				(e.keyCode >= 35 && e.keyCode <= 39)) {
+						 // let it happen, don't do anything
+						 return;
+			}
+			// Ensure that it is a number and stop the keypress
+			if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+				e.preventDefault();
+			}
+		});
+
 });
+
