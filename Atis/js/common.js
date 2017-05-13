@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+	//jquery curCSS bug
+	jQuery.curCSS = function(element, prop, val) {
+		return jQuery(element).css(prop, val);
+	};
+
 	//Toggle menu
 	$(".toggle-mnu").click(function() {
 		$(this).toggleClass("on");
@@ -36,11 +41,16 @@ $(document).ready(function() {
 	});
 
 	//City autocomplite
-	//Documentation https://ubilabs.github.io/geocomplete/
-	jQuery.curCSS = function(element, prop, val) {
-		return jQuery(element).css(prop, val);
-	};
-	$("input[name=check_city_input]").geocomplete();
+	// Documentation https://github.com/hflabs/suggestions-jquery
+	$("input[name=check_city_input]").suggestions({
+		token: "5853091e851b746f412a9cf0a78216c33c6a0f6c",
+		type: "ADDRESS",
+		count: 5,
+		// Вызывается, когда пользователь выбирает одну из подсказок 
+		onSelect: function(suggestion) {
+			console.log(suggestion);
+		}
+	});
 
 	//Datepiecker
 	//Documentation http://www.eyecon.ro/datepicker/#download
