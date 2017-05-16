@@ -202,11 +202,9 @@ $(document).ready(function() {
 		$(this).siblings("h4").removeClass("minus").removeClass("add_padding");
 	});
 
-
-
-
-
-	
 	
 
 });
+
+
+
