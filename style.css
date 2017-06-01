@@ -11,16 +11,17 @@ body {
 	line-height: 1.6;
 }
 .page {
-	background: -moz-radial-gradient(center, #ccc, #333);
-	background: -o-radial-gradient(center, #ccc, #333);
-	background: -webkit-radial-gradient(center, #ccc, #333);
-	background: radial-gradient(center, #ccc, #333);
+ background: #282537;
+ background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+ background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+ background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+ background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
 }
 h1 {
 	font-size: 46px;
 	text-align: center;
 	margin: 15px 0;
-	color: #111;
+	color: #fff;
 }
 .link {
 	float: left;
@@ -92,7 +93,7 @@ h1 {
 	font-size: 14px;
 	float: left;
 	width: 100%;
-	color: #222;
+	color: #bbb;
 	padding: 50px 15px;
 }
 .main_foot ul {
