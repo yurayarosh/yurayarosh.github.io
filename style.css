@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body, .page {
+	overflow: auto;
+	height: 100%;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1.6;
+}
+.page {
+	background: -moz-radial-gradient(center, #ccc, #333);
+	background: -o-radial-gradient(center, #ccc, #333);
+	background: -webkit-radial-gradient(center, #ccc, #333);
+	background: radial-gradient(center, #ccc, #333);
+}
+h1 {
+	font-size: 46px;
+	text-align: center;
+	margin: 15px 0;
+	color: #111;
+}
+.link {
+	float: left;
+	padding: 0 15px;
+	margin-top: 30px;
+	height: 200px;
+	width: 25%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;			
+}
+.link a {
+	display: block;
+	position: relative;
+	width: 100%;
+	font-size: 22px;
+	height: 100%;
+	text-decoration: none;
+	color: #fff;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;			
+}
+.link span {
+	position: absolute;
+	opacity: 0;
+	background: rgba(0,0,0,.75);
+	width: 100%;
+	height: 125px;
+	top: 0;
+	left: 0;
+	padding-top: 75px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.link a span:hover {
+	opacity: 1;
+}
+.consalt_plus a {
+	background-image: url("https://symu.co/image/jpgjwrbqfpc/674/780/smart_top/original/95/jpg/");
+}
+.eudora a {
+	background-image: url("https://symu.co/image/pngmswkrxtw/674/780/smart_top/original/95/jpg/");
+}
+.advocatus a {
+	background-image: url("https://symu.co/image/pngmfdszszv/674/780/smart_top/original/95/jpg/");
+}
+.atis a {
+	background-image: url("https://symu.co/image/pngmwbqyddj/674/780/smart_top/original/95/jpg/");
+}
+.carft_lance a {
+	background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/abd5ad33194591.56a368e7283fb.jpg");
+}
+.enyo a {
+	background-image: url("https://symu.co/image/pnghhrypyjj/674/780/smart_top/original/95/jpg/");
+}
+.jwood a {
+	background-image: url("https://i3.wp.com/bootstrapthemes.co/wp-content/uploads/2016/03/prev-6.jpg");
+}
+.polind a {
+	background-image: url("https://symu.co/image/pngfptprdmm/674/780/smart_top/original/95/jpg/");
+}
+.main_foot {
+	font-size: 14px;
+	float: left;
+	width: 100%;
+	color: #222;
+	padding: 50px 15px;
+}
+.main_foot ul {
+	list-style: none;
+}
+@media only screen and (max-width:1200px) {
+	.link {
+		width: 25%;
+	}
+}
+@media only screen and (max-width:992px) {
+	.link {
+		width: 33.3333%;
+	}
+}
+@media only screen and (max-width:768px) {
+	.link {
+		width: 50%;
+	}			
+}
+@media only screen and (max-width:480px) {				
+	.link {
+		width: 100%;
+	}
+}
