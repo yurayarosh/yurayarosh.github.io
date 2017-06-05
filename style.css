@@ -7,6 +7,7 @@ html, body, .page {
 	height: 100%;
 }
 body {
+	opacity: 1;
 	font-family: "Roboto", sans-serif;
 	line-height: 1.6;
 }
@@ -99,22 +100,22 @@ h1 {
 .main_foot ul {
 	list-style: none;
 }
-@media only screen and (max-width:1200px) {
+@media only screen and (max-device-width:1200px) {
 	.link {
 		width: 25%;
 	}
 }
-@media only screen and (max-width:992px) {
+@media only screen and (max-device-width:992px) {
 	.link {
 		width: 33.3333%;
 	}
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-device-width:980px) {
 	.link {
 		width: 50%;
 	}			
 }
-@media only screen and (max-width:480px) {				
+@media only screen and (max-device-width:480px) {				
 	.link {
 		width: 100%;
 	}
