@@ -1,0 +1,609 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Index page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"> </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin header -->
+      <header class="header js-header">
+        <div class="header__left">
+          <div class="nav-toggle js-nav-toggle"><span></span></div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Story</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- begin header__logo -->
+        <div class="header__logo"> <a href="#" class="logo">
+			<img src="img/logo.svg" alt="" width="160" height="32">
+		</a> </div>
+        <!-- end header__logo -->
+        <!-- begin header__right -->
+        <div class="header__right">
+          <div class="header__search">
+            <div class="search js-search">
+              <form>
+                <div class="search__input"> <input class="js-search-input" type="text" placeholder="Search..."> </div>
+                <div class="search__btn search__btn-def"> <button class="js-search-btn">
+<svg class="icon icon-search"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+</button> </div>
+                <div class="search__btn search__btn-open"> <button class="js-open-search-btn">
+<svg class="icon icon-search"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+</button> </div>
+              </form>
+            </div>
+          </div>
+          <div class="header__controls">
+            <!-- begin controls -->
+            <div class="controls">
+              <ul class="controls__list">
+                <li class="controls__item"><a href="#" class="controls__link">Login</a></li>
+                <li class="controls__item"><a href="#" class="controls__link controls__whishlist"><span>Whishlist</span> <span>2</span></a></li>
+                <li class="controls__item"><a href="#" class="controls__link controls__bag"><span>Bag</span> <span>0</span></a></li>
+                <li class="controls__item"> <a href="#" class="controls__link js-lang-toggle">En/$</a>
+                  <div class="language-list js-lang-burger">
+                    <div class="language-list__title">Language:</div>
+                    <ul class="language-list__list">
+                      <li class="language-list__item is-active"><a href="#" class="language-list__link">English</a></li>
+                      <li class="language-list__item "><a href="#" class="language-list__link">Ukrainian</a></li>
+                      <li class="language-list__item "><a href="#" class="language-list__link">Spanish</a></li>
+                      <li class="language-list__item "><a href="#" class="language-list__link">Russian</a></li>
+                    </ul>
+                    <div class="language-list__title">Currency:</div>
+                    <ul class="language-list__list">
+                      <li class="language-list__item is-active"><a href="#" class="language-list__link">USD</a></li>
+                      <li class="language-list__item "><a href="#" class="language-list__link">EU</a></li>
+                      <li class="language-list__item "><a href="#" class="language-list__link">UAH</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- end controls -->
+          </div>
+        </div>
+        <!-- end header__right -->
+        <div class="burger js-burger js-scrollbar">
+          <div class="burger__search">
+            <div class="search is-active">
+              <form>
+                <div class="search__input"> <input type="text" placeholder="Search..."> </div>
+                <div class="search__btn"> <button class="">
+<svg class="icon icon-search"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+</button> </div>
+              </form>
+            </div>
+          </div>
+          <div class="burger__main">
+            <ul class="burger__list">
+              <li class="burger__item"> <a href="#" class="burger__link is-arrow js-modal-open" data-target-modal="shop">Shop</a> </li>
+              <li class="burger__item"><a href="#" class="burger__link">Story</a></li>
+              <li class="burger__item"><a href="#" class="burger__link">Contact</a></li>
+              <li class="burger__item"><a href="#" class="burger__link">Wishlist</a></li>
+              <li class="burger__item"><a href="#" class="burger__link is-arrow">Account</a></li>
+            </ul>
+            <div class="burger__lang js-modal-open" data-target-modal="lang"> En/$ </div>
+          </div>
+          <div class="burger__hr hr"></div>
+          <div class="burger__footer">
+            <div class="burger__social">
+              <ul class="social">
+                <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+</a></li>
+                <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+</a></li>
+                <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-pinterest"><use xlink:href="img/sprite.svg#icon-pinterest"></use></svg>
+</a></li>
+                <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-youtube"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
+</a></li>
+              </ul>
+            </div>
+            <ul class="burger__support">
+              <li class="burger__support-item"><a href="#" class="burger__support-link">Support</a></li>
+              <li class="burger__support-item"><a href="#" class="burger__support-link">Terms & Conditions</a></li>
+              <li class="burger__support-item"><a href="#" class="burger__support-link">Privacy Policy</a></li>
+            </ul>
+            <div class="burger__copy"> &copy;2017 Incarne </div>
+          </div>
+          <div class="burger-shop js-modal js-scrollbar" data-modal="shop">
+            <div class="burger__search">
+              <div class="search is-active">
+                <form>
+                  <div class="search__input"> <input type="text" placeholder="Search..."> </div>
+                  <div class="search__btn"> <button class="">
+<svg class="icon icon-search"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+</button> </div>
+                </form>
+              </div>
+            </div> <span class="burger__back js-popup-close">Back</span>
+            <ul class="burger-shop-list">
+              <li class="burger-shop__item"><a href="#" class="burger-shop__link">Shop All</a></li>
+              <li class="burger-shop__item"><a href="#" class="burger-shop__link">Backpacks</a></li>
+              <li class="burger-shop__item"><a href="#" class="burger-shop__link">Bags</a></li>
+              <li class="burger-shop__item"><a href="#" class="burger-shop__link">Laptop, iPad & iPhone Cases</a></li>
+              <li class="burger-shop__item"><a href="#" class="burger-shop__link">Wallets & Purses</a></li>
+              <li class="burger-shop__item"><a href="#" class="burger-shop__link">Eyewear Cases</a></li>
+            </ul>
+            <div class="burger__hr hr"></div>
+            <div class="burger__footer">
+              <div class="burger__social">
+                <ul class="social">
+                  <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+</a></li>
+                  <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+</a></li>
+                  <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-pinterest"><use xlink:href="img/sprite.svg#icon-pinterest"></use></svg>
+</a></li>
+                  <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-youtube"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
+</a></li>
+                </ul>
+              </div>
+              <ul class="burger__support">
+                <li class="burger__support-item"><a href="#" class="burger__support-link">Support</a></li>
+                <li class="burger__support-item"><a href="#" class="burger__support-link">Terms & Conditions</a></li>
+                <li class="burger__support-item"><a href="#" class="burger__support-link">Privacy Policy</a></li>
+              </ul>
+              <div class="burger__copy"> &copy;2017 Incarne </div>
+            </div>
+          </div>
+          <div class="burger-lang js-modal js-scrollbar" data-modal="lang">
+            <div class="burger__search">
+              <div class="search is-active">
+                <form>
+                  <div class="search__input"> <input type="text" placeholder="Search..."> </div>
+                  <div class="search__btn"> <button class="">
+<svg class="icon icon-search"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+</button> </div>
+                </form>
+              </div>
+            </div> <span class="burger__back js-popup-close">Back</span>
+            <div class="burger-lang__main">
+              <div class="burger-lang__main-l">
+                <div class="burger-lang__main-title">Language:</div>
+                <ul class="burger-lang__main-list">
+                  <li class="burger-lang__main-item"><a href="#" class="burger-lang__main-link is-active">English</a></li>
+                  <li class="burger-lang__main-item"><a href="#" class="burger-lang__main-link ">Ukrainian</a></li>
+                  <li class="burger-lang__main-item"><a href="#" class="burger-lang__main-link ">Spanish</a></li>
+                  <li class="burger-lang__main-item"><a href="#" class="burger-lang__main-link ">Russian</a></li>
+                </ul>
+              </div>
+              <div class="burger-lang__main-r">
+                <div class="burger-lang__main-title">Currency:</div>
+                <ul class="burger-lang__main-list">
+                  <li class="burger-lang__main-item"><a href="#" class="burger-lang__main-link is-active">USD</a></li>
+                  <li class="burger-lang__main-item"><a href="#" class="burger-lang__main-link ">EU</a></li>
+                  <li class="burger-lang__main-item"><a href="#" class="burger-lang__main-link ">UAH</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="burger__hr hr"></div>
+            <div class="burger__footer">
+              <div class="burger__social">
+                <ul class="social">
+                  <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+</a></li>
+                  <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+</a></li>
+                  <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-pinterest"><use xlink:href="img/sprite.svg#icon-pinterest"></use></svg>
+</a></li>
+                  <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-youtube"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
+</a></li>
+                </ul>
+              </div>
+              <ul class="burger__support">
+                <li class="burger__support-item"><a href="#" class="burger__support-link">Support</a></li>
+                <li class="burger__support-item"><a href="#" class="burger__support-link">Terms & Conditions</a></li>
+                <li class="burger__support-item"><a href="#" class="burger__support-link">Privacy Policy</a></li>
+              </ul>
+              <div class="burger__copy"> &copy;2017 Incarne </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <div class="container">
+        <!-- begin first-screen -->
+        <div class="first-screen">
+          <div class="first-screen__left">
+            <div class="video-bg js-modal-open js-video-open" data-target-modal="video">
+              <div class="first-screen__title">
+                <h1 class="h1">Inspiration that comes<br> from the heart</h1>
+              </div> <video class="js-video-bg" autoplay="" loop="" muted=""><source src="video/mov_bbb.mp4" type="video/mp4"></video>
+              <div class="video-bg__play"> <i class="icon-play"></i> <span>play</span> </div>
+            </div>
+          </div>
+          <div class="first-screen__right">
+            <div class="first-screen__right-in">
+              <div class="first-screen__descr text">
+                <p>We fill the disembodied skin and cold accessories with the warmth of life, care for people and strive for human understanding.</p>
+              </div>
+              <div class="first-screen__btn"> <a href="#" class="btn">shop now</a> </div>
+            </div>
+          </div>
+        </div>
+        <!-- end first-screen -->
+      </div>
+      <div class="container">
+        <!-- begin products-slider -->
+        <section class="products-slider">
+          <div class="products-slider__title">
+            <h2 class="h2">Featured Products</h2>
+            <div class="h2-subttl">See What’s Trending Right Now</div>
+          </div>
+          <div class="products-slider__slider">
+            <div class="slider__wrap">
+              <div class="slider js-slider"> <a href="#" class="slider__item">
+						<img src="img/products-slider/product-1.jpg" alt="">
+						<div class="slider__title">Green Backpack on Yarns</div>
+						<div class="sleder__price">$50</div>
+					</a> <a href="#" class="slider__item">
+						<img src="img/products-slider/product-2.jpg" alt="">
+						<div class="slider__title">Yellow MacBook Case</div>
+						<div class="sleder__price">$50</div>
+					</a> <a href="#" class="slider__item">
+						<img src="img/products-slider/product-3.jpg" alt="">
+						<div class="slider__title">Red Mini-Backpack</div>
+						<div class="sleder__price">$50</div>
+					</a> <a href="#" class="slider__item">
+						<img src="img/products-slider/product-4.jpg" alt="">
+						<div class="slider__title">Blue Fanny Pack</div>
+						<div class="sleder__price">$50</div>
+					</a> <a href="#" class="slider__item">
+						<img src="img/products-slider/product-1.jpg" alt="">
+						<div class="slider__title">Green Backpack on Yarns</div>
+						<div class="sleder__price">$50</div>
+					</a> <a href="#" class="slider__item">
+						<img src="img/products-slider/product-2.jpg" alt="">
+						<div class="slider__title">Yellow MacBook Case</div>
+						<div class="sleder__price">$50</div>
+					</a> <a href="#" class="slider__item">
+						<img src="img/products-slider/product-3.jpg" alt="">
+						<div class="slider__title">Red Mini-Backpack</div>
+						<div class="sleder__price">$50</div>
+					</a> </div>
+              <div class="slider__dots"></div>
+            </div>
+          </div>
+        </section>
+        <!-- end products-slider -->
+      </div>
+      <div class="container">
+        <!-- begin about-us -->
+        <section class="about-us">
+          <div class="about-us__inner">
+            <div class="about-us__descr">
+              <div class="about-us__title">
+                <h2 class="h2">About Us</h2>
+              </div>
+              <div class="about-us__text text">
+                <p>I've always loved good things. Design, where there is nothing superfluous and catchy, reliable accessories for centuries, and perhaps most importantly, human labor, when a thing is created with love for one's business and thought about
+                  you, about your needs.</p>
+              </div>
+              <div class="about-us__btn"> <a href="#" class="btn">Learn more</a> </div>
+            </div>
+            <div class="about-us__img" style="background-image: url('img/about-us.jpg');"></div>
+            <div class="about-us__btn-mobile"> <a href="#" class="btn">Learn more</a> </div>
+          </div>
+        </section>
+        <!-- end about-us -->
+      </div>
+      <!-- begin what-we-do -->
+      <section class="what-we-do">
+        <div class="what-we-do__title">
+          <h2 class="h2">What We Do</h2>
+        </div>
+        <div class="container">
+          <div class="what-we-do__2img">
+            <!-- begin two-img -->
+            <div class="two-img">
+              <div class="two-img__left"> <a href="#" class="two-img__left-in" style="background-image: url('img/what-we-do/backpacks.jpg');">
+						<span class="two-img__title">Backpaks</span>
+					</a> </div>
+              <div class="two-img__right"> <a href="#" class="two-img__right-in" style="background-image: url('img/what-we-do/bags.jpg');">
+						<span class="two-img__title">Bags</span>
+					</a> </div>
+            </div>
+            <!-- end two-img -->
+          </div>
+        </div>
+        <div class="what-we-do__1img">
+          <!-- begin one-img --><a href="#" class="one-img" style="background-image: url('img/what-we-do/tabl-cases.jpg');">
+			<span class="one-img__title">Laptop, Tablet<br>& Phone Cases</span>
+		</a>
+          <!-- end one-img -->
+        </div>
+        <div class="container">
+          <div class="what-we-do__2img what-we-do__2img-nomb">
+            <!-- begin two-img -->
+            <div class="two-img two-img_mod">
+              <div class="two-img__left"> <a href="#" class="two-img__left-in" style="background-image: url('img/what-we-do/wallets.jpg');">
+						<span class="two-img__title">Wallets & Purses</span>
+					</a> </div>
+              <div class="two-img__right"> <a href="#" class="two-img__right-in" style="background-image: url('img/what-we-do/glass-cases.jpg');">
+						<span class="two-img__title">Eyewear Cases</span>
+					</a> </div>
+            </div>
+            <!-- end two-img -->
+          </div>
+        </div>
+      </section>
+      <!-- end what-we-do -->
+      <!-- begin colors -->
+      <section class="colors">
+        <a href="#" class="colors__color is-brown js-modal-open js-color-item" data-nmb="1" data-target-modal="colors" data-color="Brown">
+          <div class="colors__color-title">Brown</div>
+        </a>
+        <a href="#" class="colors__color is-red js-modal-open js-color-item" data-nmb="2" data-target-modal="colors" data-color="Red">
+          <div class="colors__color-title">Red</div>
+        </a>
+        <a href="#" class="colors__color is-indigo js-modal-open js-color-item" data-nmb="3" data-target-modal="colors" data-color="Indigo">
+          <div class="colors__color-title">Indigo</div>
+        </a>
+        <a href="#" class="colors__color is-darc-blue js-modal-open js-color-item" data-nmb="4" data-target-modal="colors" data-color="Dark Blue">
+          <div class="colors__color-title">Dark blue</div>
+        </a>
+        <a href="#" class="colors__color is-yellow js-modal-open js-color-item" data-nmb="5" data-target-modal="colors" data-color="Yellow">
+          <div class="colors__color-title">Yellow</div>
+        </a>
+        <a href="#" class="colors__color is-black js-modal-open js-color-item" data-nmb="6" data-target-modal="colors" data-color="Black">
+          <div class="colors__color-title">Black</div>
+        </a>
+        <a href="#" class="colors__color is-purple js-modal-open js-color-item" data-nmb="7" data-target-modal="colors" data-color="Purple">
+          <div class="colors__color-title">Purple</div>
+        </a>
+        <a href="#" class="colors__color is-light-blue js-modal-open js-color-item" data-nmb="8" data-target-modal="colors" data-color="Light Blue">
+          <div class="colors__color-title">Light blue</div>
+        </a>
+        <a href="#" class="colors__color is-dark-brown js-modal-open js-color-item" data-nmb="9" data-target-modal="colors" data-color="Dark Brown">
+          <div class="colors__color-title">Dark brown</div>
+        </a>
+        <div class="colors__title">
+          <h2 class="h2 h2_biger">What Does the Color<br>You Choose Say About You?</h2>
+        </div>
+      </section>
+      <!-- end colors -->
+      <!-- begin newsletter  -->
+      <section class="newsletter">
+        <div class="newsletter__inner" style="background-image: url('img/bg-newsletter.jpg');">
+          <div class="newsletter__left">
+            <div class="newsletter__title">
+              <h2 class="h2 h2_white h2_biger">Newsletter</h2>
+            </div>
+            <div class="newsletter__descr">
+              <p>Sign up to our Newsletter to hear about new product releases, learn about our design process, and everything else going on behind the scenes at Incarne </p>
+            </div>
+          </div>
+          <div class="newsletter__right">
+            <div class="newsletter__form">
+              <div class="form form_transparent js-form-newsletter">
+                <form class="">
+                  <div class="form__input"> <input type="text" placeholder="Enter Your Email"> </div>
+                  <div class="form__btn"> <button class="btn btn_transparent js-form-newsletter-btn">submit</button> </div>
+                </form>
+              </div>
+              <div class="newsletter-success js-newsletter-success">
+                <div class="newsletter-success__title">
+                  <h4 class="h4">Thank’s For Subscribe</h4>
+                </div>
+                <div class="newsletter-success__bar"></div>
+                <div class="newsletter-success__text">
+                  <p>We are promise to send only interesting letters</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end newsletter -->
+      <!-- begin popup-video -->
+      <div class="popup popup_video js-modal" data-modal="video"> <video class="js-video-player" autoplay="" loop="" controls="">
+		<source src="video/mov_bbb.mp4" type="video/mp4">
+	</video>
+        <div class="popup__close popup_video__close popup-close js-popup-close js-video-close"></div>
+      </div>
+      <!-- end popup-video -->
+      <!-- begin popup_colors -->
+      <div class="popup popup_colors js-modal js-scrollbar" data-modal="colors">
+        <div class="popup_colors__inner ">
+          <div class="popup_colors__dots">
+            <div class="popup_colors__dots-title">
+              <h4 class="h4">Colors</h4>
+              <div class="h4-subttl js-color-title">Red</div>
+            </div>
+            <!-- hidden divs with colors titles data -->
+            <div class="popup_colors__dot-data js-color-dot1" data-color-title="Brown"></div>
+            <div class="popup_colors__dot-data js-color-dot2" data-color-title="Red"></div>
+            <div class="popup_colors__dot-data js-color-dot3" data-color-title="Indigo"></div>
+            <div class="popup_colors__dot-data js-color-dot4" data-color-title="Dark Blue"></div>
+            <div class="popup_colors__dot-data js-color-dot5" data-color-title="Yellow"></div>
+            <div class="popup_colors__dot-data js-color-dot6" data-color-title="Black"></div>
+            <div class="popup_colors__dot-data js-color-dot7" data-color-title="Purple"></div>
+            <div class="popup_colors__dot-data js-color-dot8" data-color-title="Light Blue"></div>
+            <div class="popup_colors__dot-data js-color-dot9" data-color-title="Dark Brown"></div>
+            <!-- hidden divs with colors titles data -->
+          </div>
+          <div class="popup_colors__slider js-colors-slider">
+            <div class="popup_colors__item">
+              <div class="popup_colors__title">
+                <h3 class="h3">Red Color Personality Code</h3>
+              </div>
+              <div class="popup_colors__descr text">
+                <p>Having red as your favorite color identifies you as extroverted and optimistic, courageous and confident.</p>
+                <p>You are action oriented and physically active - sex is a necessity to you - you have strong survival instincts.</p>
+                <p>With a favorite color red, you like to be the center of attention - in fact all reds crave attention - other people are drawn to the vitality and sense of excitement you emit.</p>
+                <p>As a personality color red, you are stimulating to be with and you radiate a great deal of energy.</p>
+                <p>You are ambitious and competitive and like to be the winner - you are achievement orientated and second place is not good enough for you. With you it is all or nothing.</p>
+              </div>
+              <div class="popup_colors__btn"> <button class="btn is-brown">shop brown</button> </div>
+            </div>
+            <div class="popup_colors__item">
+              <div class="popup_colors__title">
+                <h3 class="h3">Red Color Personality Code</h3>
+              </div>
+              <div class="popup_colors__descr text">
+                <p>Having red as your favorite color identifies you as extroverted and optimistic, courageous and confident.</p>
+                <p>You are action oriented and physically active - sex is a necessity to you - you have strong survival instincts.</p>
+                <p>With a favorite color red, you like to be the center of attention - in fact all reds crave attention - other people are drawn to the vitality and sense of excitement you emit.</p>
+                <p>As a personality color red, you are stimulating to be with and you radiate a great deal of energy.</p>
+                <p>You are ambitious and competitive and like to be the winner - you are achievement orientated and second place is not good enough for you. With you it is all or nothing.</p>
+              </div>
+              <div class="popup_colors__btn"> <button class="btn is-red">shop red</button> </div>
+            </div>
+            <div class="popup_colors__item">
+              <div class="popup_colors__title">
+                <h3 class="h3">Red Color Personality Code</h3>
+              </div>
+              <div class="popup_colors__descr text">
+                <p>Having red as your favorite color identifies you as extroverted and optimistic, courageous and confident.</p>
+                <p>You are action oriented and physically active - sex is a necessity to you - you have strong survival instincts.</p>
+                <p>With a favorite color red, you like to be the center of attention - in fact all reds crave attention - other people are drawn to the vitality and sense of excitement you emit.</p>
+                <p>As a personality color red, you are stimulating to be with and you radiate a great deal of energy.</p>
+                <p>You are ambitious and competitive and like to be the winner - you are achievement orientated and second place is not good enough for you. With you it is all or nothing.</p>
+              </div>
+              <div class="popup_colors__btn"> <button class="btn is-indigo">shop indigo</button> </div>
+            </div>
+            <div class="popup_colors__item">
+              <div class="popup_colors__title">
+                <h3 class="h3">Red Color Personality Code</h3>
+              </div>
+              <div class="popup_colors__descr text">
+                <p>Having red as your favorite color identifies you as extroverted and optimistic, courageous and confident.</p>
+                <p>You are action oriented and physically active - sex is a necessity to you - you have strong survival instincts.</p>
+                <p>With a favorite color red, you like to be the center of attention - in fact all reds crave attention - other people are drawn to the vitality and sense of excitement you emit.</p>
+                <p>As a personality color red, you are stimulating to be with and you radiate a great deal of energy.</p>
+                <p>You are ambitious and competitive and like to be the winner - you are achievement orientated and second place is not good enough for you. With you it is all or nothing.</p>
+              </div>
+              <div class="popup_colors__btn"> <button class="btn is-dark-blue">shop dark blue</button> </div>
+            </div>
+            <div class="popup_colors__item">
+              <div class="popup_colors__title">
+                <h3 class="h3">Red Color Personality Code</h3>
+              </div>
+              <div class="popup_colors__descr text">
+                <p>Having red as your favorite color identifies you as extroverted and optimistic, courageous and confident.</p>
+                <p>You are action oriented and physically active - sex is a necessity to you - you have strong survival instincts.</p>
+                <p>With a favorite color red, you like to be the center of attention - in fact all reds crave attention - other people are drawn to the vitality and sense of excitement you emit.</p>
+                <p>As a personality color red, you are stimulating to be with and you radiate a great deal of energy.</p>
+                <p>You are ambitious and competitive and like to be the winner - you are achievement orientated and second place is not good enough for you. With you it is all or nothing.</p>
+              </div>
+              <div class="popup_colors__btn"> <button class="btn is-yellow">shop yellow</button> </div>
+            </div>
+            <div class="popup_colors__item">
+              <div class="popup_colors__title">
+                <h3 class="h3">Red Color Personality Code</h3>
+              </div>
+              <div class="popup_colors__descr text">
+                <p>Having red as your favorite color identifies you as extroverted and optimistic, courageous and confident.</p>
+                <p>You are action oriented and physically active - sex is a necessity to you - you have strong survival instincts.</p>
+                <p>With a favorite color red, you like to be the center of attention - in fact all reds crave attention - other people are drawn to the vitality and sense of excitement you emit.</p>
+                <p>As a personality color red, you are stimulating to be with and you radiate a great deal of energy.</p>
+                <p>You are ambitious and competitive and like to be the winner - you are achievement orientated and second place is not good enough for you. With you it is all or nothing.</p>
+              </div>
+              <div class="popup_colors__btn"> <button class="btn is-black">shop black</button> </div>
+            </div>
+            <div class="popup_colors__item">
+              <div class="popup_colors__title">
+                <h3 class="h3">Red Color Personality Code</h3>
+              </div>
+              <div class="popup_colors__descr text">
+                <p>Having red as your favorite color identifies you as extroverted and optimistic, courageous and confident.</p>
+                <p>You are action oriented and physically active - sex is a necessity to you - you have strong survival instincts.</p>
+                <p>With a favorite color red, you like to be the center of attention - in fact all reds crave attention - other people are drawn to the vitality and sense of excitement you emit.</p>
+                <p>As a personality color red, you are stimulating to be with and you radiate a great deal of energy.</p>
+                <p>You are ambitious and competitive and like to be the winner - you are achievement orientated and second place is not good enough for you. With you it is all or nothing.</p>
+              </div>
+              <div class="popup_colors__btn"> <button class="btn is-purple">shop purple</button> </div>
+            </div>
+            <div class="popup_colors__item">
+              <div class="popup_colors__title">
+                <h3 class="h3">Red Color Personality Code</h3>
+              </div>
+              <div class="popup_colors__descr text">
+                <p>Having red as your favorite color identifies you as extroverted and optimistic, courageous and confident.</p>
+                <p>You are action oriented and physically active - sex is a necessity to you - you have strong survival instincts.</p>
+                <p>With a favorite color red, you like to be the center of attention - in fact all reds crave attention - other people are drawn to the vitality and sense of excitement you emit.</p>
+                <p>As a personality color red, you are stimulating to be with and you radiate a great deal of energy.</p>
+                <p>You are ambitious and competitive and like to be the winner - you are achievement orientated and second place is not good enough for you. With you it is all or nothing.</p>
+              </div>
+              <div class="popup_colors__btn"> <button class="btn is-light-blue">shop light blue</button> </div>
+            </div>
+            <div class="popup_colors__item">
+              <div class="popup_colors__title">
+                <h3 class="h3">Red Color Personality Code</h3>
+              </div>
+              <div class="popup_colors__descr text">
+                <p>Having red as your favorite color identifies you as extroverted and optimistic, courageous and confident.</p>
+                <p>You are action oriented and physically active - sex is a necessity to you - you have strong survival instincts.</p>
+                <p>With a favorite color red, you like to be the center of attention - in fact all reds crave attention - other people are drawn to the vitality and sense of excitement you emit.</p>
+                <p>As a personality color red, you are stimulating to be with and you radiate a great deal of energy.</p>
+                <p>You are ambitious and competitive and like to be the winner - you are achievement orientated and second place is not good enough for you. With you it is all or nothing.</p>
+              </div>
+              <div class="popup_colors__btn"> <button class="btn is-dark-brown">shop dark brown</button> </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__close popup_colors__close popup-close js-popup-close"></div>
+      </div>
+      <!-- end popup_colors -->
+      <!-- begin footer -->
+      <footer class="footer">
+        <div class="footer__social">
+          <ul class="social social_footer">
+            <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+</a></li>
+            <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+</a></li>
+            <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-pinterest"><use xlink:href="img/sprite.svg#icon-pinterest"></use></svg>
+</a></li>
+            <li class="social__item"><a href="#" class="social__link">
+<svg class="icon icon-youtube"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
+</a></li>
+          </ul>
+        </div>
+        <div class="footer__support">
+          <div class="footer__copy">&copy;2017 Incarne</div>
+          <ul class="support">
+            <li class="support__item"><a href="#" class="support__link">Support</a></li>
+            <li class="support__item"><a href="#" class="support__link">Terms & Conditions</a></li>
+            <li class="support__item"><a href="#" class="support__link">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>
