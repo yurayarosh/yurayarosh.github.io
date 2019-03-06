@@ -1,0 +1,119 @@
+.section
+  position: relative
+  // height: 100vh
+  // display: flex
+  // flex-direction: row
+  // justify-content: center
+  // align-items: center
+  z-index: 1
+  .fp-tableCell, .fp-scrollable
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+  +md
+    // min-height: 100vh
+    padding-top: 10%
+    padding-bottom: 10%
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+  &__title
+    text-align: center
+    margin-bottom: 4%
+    position: relative
+    z-index: 2
+    .h2, h2
+      margin-bottom: 10px
+    .subttl
+      display: block
+      +cont(655)
+  &__left,
+  &__right
+    width: 50%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    +md
+      width: auto
+      display: block
+  &__left
+    border: 1px solid  #f4f4f4
+    border-top: 0
+    border-bottom: 0
+  &__text
+    +clr
+    .h4, h4
+      margin-bottom: 20px
+    p
+      margin-bottom: 25px
+      +sm
+        margin-bottom: 15px
+  &__text-logo
+    float: left
+    padding: 20px 30px 25px
+    border: 1px solid #f4f4f4
+    margin-right: 25px
+    margin-bottom: 15px
+    margin-top: -7px
+    display: flex
+    align-items: center
+    justify-content: center
+    +sm
+      margin-bottom: 5px
+  &__block
+    &.is-col-7
+      width: percentage(7/12)
+      +md
+        width: percentage(8/12)
+      +sm
+        width: 100%
+  &__questions
+    margin-top: -35px
+    +md
+      margin-top: 0
+
+  &--black
+    background-color: #000
+  &--purple
+    background-color: $c-accent
+  &--dark
+    background-color: #151515
+
+.section-bg
+  position: absolute
+  +cover
+  height: 100%
+  width: 50%
+  top: 0
+  right: 0
+  z-index: -1
+  +sm
+    display: none
+    
+
+.section-img
+  // height: 100%
+  // width: 100%
+  position: relative
+  +md
+    display: none
+
+// .section-bg-cols
+//   +vcenter
+//   width: 100%
+//   height: 500%
+//   z-index: -1
+//   display: flex
+//   padding-left: 15px
+//   padding-right: 15px
+
+
+// .section-bg-col
+//   width: 25%
+//   padding-right: 15px
+//   background-color: $c-accent
+//   border-left: 1px solid  #2f126f
+//   &:nth-child(odd)
+//     background-color: #392073

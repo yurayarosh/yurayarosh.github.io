@@ -1,0 +1,43 @@
+{%set
+slider = [
+  {
+    title: 'Александра',
+    subttl: 'Ведущий менеджер',
+    img: 'team-1.jpg'
+  },
+  {
+    title: 'Title',
+    subttl: 'Subtitle',
+    img: 'team-2.jpg'
+  },
+  {
+    title: 'Евгений',
+    subttl: 'Дизайнер',
+    img: 'team-3.jpg'
+  },
+  {
+    title: 'Андрей',
+    subttl: 'Программист',
+    img: 'team-4.jpg'
+  }
+]
+%}
+
+<!-- begin team -->
+<section class="s-team section" data-anchor="team">
+  <!-- begin team -->
+  <div class="team">
+    {% for i in slider %}
+    <!-- begin member -->
+    <div class="member" style="background-image: url('img/team/{{ i.img }}');">
+      <div class="member__title">
+        <h4 class="h4">{{ i.title }}</h4>
+      </div>
+      <div class="member__subttl">{{ i.subttl }}</div>
+    </div>
+    <!-- end member -->
+    {% endfor %}
+  </div>
+  <!-- end team -->
+</section>
+<!-- end team -->

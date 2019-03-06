@@ -1,0 +1,100 @@
+$icons: (0:0)
+$icons: map-merge($icons,('award': (X: 0px, Y:0px, W: 181px, H: 129px, TW: 515px, TH: 405px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('execution': (X: -191px, Y:0px, W: 181px, H: 129px, TW: 515px, TH: 405px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('guarantee': (X: -382px, Y:0px, W: 133px, H: 127px, TW: 515px, TH: 405px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('idea': (X: 0px, Y:-139px, W: 180px, H: 129px, TW: 515px, TH: 405px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('money-back': (X: -382px, Y:-137px, W: 133px, H: 127px, TW: 515px, TH: 405px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('quote-down': (X: -143px, Y:-278px, W: 64px, H: 46px, TW: 515px, TH: 405px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('quote': (X: -217px, Y:-278px, W: 64px, H: 46px, TW: 515px, TH: 405px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('seven': (X: 0px, Y:-278px, W: 133px, H: 127px, TW: 515px, TH: 405px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('shield': (X: -190px, Y:-139px, W: 180px, H: 129px, TW: 515px, TH: 405px, IMG: '../img/sprite.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+  $icon: map-get($icons, $icon)
+  @return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  width: icon-attr($iconName, W)
+  height: icon-attr($iconName, H)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  $width: icon-attr($iconName, W)
+  $height: icon-attr($iconName, H)
+  width: $width/2
+  height: $height/2
+  $x: icon-attr($iconName, X)
+  $y: icon-attr($iconName, Y)
+  background-position: $x/2 $y/2
+  $tw: icon-attr($iconName, TW)   
+  $th: icon-attr($iconName, TH)
+  background-size: $tw/2 $th/2    
+
+
+@mixin s($i)
+  +sprite($i)
+@mixin sp($i)
+  +sprite-position($i)
+@mixin sr($i)
+  +sprite-retina($i)  
+
+//
+//.icon-award
+//  width: 181px
+//  height: 129px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px 0px
+//
+//.icon-execution
+//  width: 181px
+//  height: 129px
+//  background-image: url('../img/sprite.png')
+//  background-position: -191px 0px
+//
+//.icon-guarantee
+//  width: 133px
+//  height: 127px
+//  background-image: url('../img/sprite.png')
+//  background-position: -382px 0px
+//
+//.icon-idea
+//  width: 180px
+//  height: 129px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px -139px
+//
+//.icon-money-back
+//  width: 133px
+//  height: 127px
+//  background-image: url('../img/sprite.png')
+//  background-position: -382px -137px
+//
+//.icon-quote-down
+//  width: 64px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -143px -278px
+//
+//.icon-quote
+//  width: 64px
+//  height: 46px
+//  background-image: url('../img/sprite.png')
+//  background-position: -217px -278px
+//
+//.icon-seven
+//  width: 133px
+//  height: 127px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px -278px
+//
+//.icon-shield
+//  width: 180px
+//  height: 129px
+//  background-image: url('../img/sprite.png')
+//  background-position: -190px -139px
+//

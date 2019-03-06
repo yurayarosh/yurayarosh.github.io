@@ -1,0 +1,43 @@
+.scroll-down
+  color: #ffa91b
+  text-align: center
+  display: inline-block
+  &__title
+  &__arr
+    position: relative
+    display: inline-block
+    width: 25px
+    height: 45px
+    transition: border-color .3s
+    +hover
+      &::before,
+      &::after,
+      span
+        border-color: #fff
+    &::before,
+    &::after
+      content: ''
+    &::before,
+    &::after,
+    span
+      position: absolute
+      display: block
+      +icon-arrow(16, 16, 1, #ffa91b, -45)
+      animation: scrollDown 1s infinite
+    &::before
+      top: 0
+    span
+      top: 50%
+      transform: translate(0, -50%) rotate(-45deg)
+      animation-delay: .1s
+    &::after
+      bottom: 0
+      animation-delay: .2s
+
+@keyframes scrollDown
+  0% 
+    opacity: .3
+  50%
+    opacity: 1
+  100%
+    opacity: .3

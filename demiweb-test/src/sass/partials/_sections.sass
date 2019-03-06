@@ -1,0 +1,40 @@
+.s-guarantee
+  overflow: hidden
+  .section-bg
+    height: 65%
+    width: 40%
+    bottom: 0
+    top: auto
+    +lg
+      width: 50%
+    +md
+      height: 50%
+      width: 35%
+
+.s-team
+  background-color: $c-accent
+  +md
+    padding-top: 0
+    padding-bottom: 0
+
+.s-features
+  overflow: hidden
+  .section-bg
+    width: 24vw
+    // height: 50%
+    bottom: 0
+    top: auto
+    background-position: 0 0
+    &::before
+      content: ''
+      +coverdiv
+      background-color: rgba($c-accent, .7)
+
+.s-questions
+  overflow: hidden
+  +md
+    display: block
+
+.s-testimonials
+  +md
+    display: block
